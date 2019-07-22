@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/nav_new"
+            android:title="@string/menu_new" />
+        <item
+            android:id="@+id/nav_pop"
+            android:title="@string/menu_pop" />
+        <item
+            android:id="@+id/nav_career"
+            android:title="@string/menu_career" />
+        <item
+            android:id="@+id/nav_education"
+            android:title="@string/menu_education" />
+        <item
+            android:id="@+id/nav_rede"
+            android:title="@string/menu_rede" />
+    </group>
+
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_curs"
+            android:title="@string/menu_curs" />
+        <item
+            android:id="@+id/nav_writer"
+            android:title="@string/menu_writer" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/menu_about" />
+    </group>
+
+</menu>

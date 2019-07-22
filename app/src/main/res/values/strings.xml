@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RSSReader</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="logo_text">CourseBurg</string>
+
+    <string name="menu_new">Новое</string>
+    <string name="menu_pop">Популярное</string>
+    <string name="menu_career">Карьера</string>
+    <string name="menu_education">Самообразование</string>
+    <string name="menu_rede">Советы на каждый день</string>
+    <string name="menu_curs">Подобрать курсы</string>
+    <string name="menu_writer">Как стать автором</string>
+    <string name="menu_about">О нас</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

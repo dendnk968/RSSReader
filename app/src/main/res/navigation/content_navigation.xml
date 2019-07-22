@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_navigation"
+    app:startDestination="@id/fragmentNews">
+
+    <fragment
+        android:id="@+id/fragmentNews"
+        android:name="com.example.rssreader.FragmentNews"
+        android:label="fragment_fragment_news"
+        tools:layout="@layout/fragment_news"
+        >
+        <action
+            android:id="@+id/action_fragmentNews_self"
+            app:destination="@id/fragmentNews"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="page"
+                android:defaultValue="news" />
+        </action>
+        <argument
+            android:name="page"
+            app:argType="string"
+            android:defaultValue="news" />
+        <action
+            android:id="@+id/action_fragmentNews_to_webViewActivity"
+            app:destination="@id/webViewActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <activity
+        android:id="@+id/webViewActivity"
+        android:name="com.example.rssreader.Web.WebViewActivity"
+        android:label="activity_web_view"
+        tools:layout="@layout/activity_web_view" >
+        <argument
+            android:name="content"
+            app:argType="string"
+            app:nullable="true" />
+        <argument android:name="URL"
+            app:argType="string"
+            app:nullable="true" />
+    </activity>
+</navigation>
